@@ -1,8 +1,8 @@
 #**Traffic Sign Recognition** 
 
-##Writeup Template
+## Writeup Template
 
-###You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
+### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
 
 ---
 
@@ -23,21 +23,24 @@ The goals / steps of this project are the following:
 [original_img]: ./examples/original1.png "Original Image"
 [processed_imgs]: ./examples/processed6.png "Processed"
 [augmented_imgs]: ./examples/aug_proc6.png "Augmented and Pre-processed"
-[img1]: ./examples/1.png "Traffic Sign 1"
-[img2]: ./examples/12.png "Traffic Sign 2"
-[img3]: ./examples/13.png "Traffic Sign 3"
-[img4]: ./examples/22.png "Traffic Sign 4"
-[img5]: ./examples/40.png "Traffic Sign 5"
+[img0]: ./examples/0.png "Traffic Sign 1"
+[img1]: ./examples/1.png "Traffic Sign 2"
+[img2]: ./examples/2.png "Traffic Sign 3"
+[img3]: ./examples/3.png "Traffic Sign 4"
+[img4]: ./examples/5.png "Traffic Sign 5"
+[img5]: ./examples/9.png "Traffic Sign 6"
+[img6]: ./examples/12.png "Traffic Sign 7"
+[img7]: ./examples/13.png "Traffic Sign 8"
+[img8]: ./examples/16.png "Traffic Sign 9"
+[img9]: ./examples/17.png "Traffic Sign 10"
+[img10]: ./examples/20.png "Traffic Sign 11"
+[img11]: ./examples/22.png "Traffic Sign 12"
+[img12]: ./examples/28.png "Traffic Sign 13"
+[img13]: ./examples/35.png "Traffic Sign 14"
+[img14]: ./examples/36.png "Traffic Sign 15"
+[img15]: ./examples/38.png "Traffic Sign 16"
+[img16]: ./examples/40.png "Traffic Sign 17"
 [fm]: ./examples/fm2.png "Priority Road Feature Map" 
-
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
-
 
 
 [augmented_imgs]: ./examples/placeholder.png "Traffic Sign 5"
@@ -182,7 +185,11 @@ I set batch size to small value of 64 to trade accuracy against speed. As I unde
 Here are five real-life Lithuanian traffic signs installed in the city of Vilnius:
 
 ![alt text][img1] ![alt text][img2] ![alt text][img3] 
-![alt text][img4] ![alt text][img5]
+![alt text][img4] ![alt text][img5] ![alt text][img6] 
+![alt text][img7] ![alt text][img8] ![alt text][img9] 
+![alt text][img10] ![alt text][img11] ![alt text][img12] 
+![alt text][img13] ![alt text][img14] ![alt text][img15]
+![alt text][img16] ![alt text][img17]
 
 The first image might be difficult to classify due to the fact that digit '6' in German signs looks quite different. 
 
