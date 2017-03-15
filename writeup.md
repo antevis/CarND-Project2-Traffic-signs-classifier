@@ -199,7 +199,7 @@ The code for making predictions on my final model is located in the 27th cell of
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
+| Image			              |     Prediction	        					                  | 
 |:---------------------:|:---------------------------------------------:| 
 | Priority road    		| Priority road   								| 
 | No passing     		| No passing 									|
@@ -216,7 +216,7 @@ The code for making predictions on my final model is located in the 31st cell of
 Top 5 Softmax probabilities for above signs
 
 Vehicles over 3,5 metric tons prohibited
-| Probability         	|     Prediction	        					| 
+| Probability         	 |     Prediction	        					                  | 
 |:---------------------:|:---------------------------------------------:| 
 | .0612         		| Vehicles over 3,5 metric tons prohibited   	| 
 | .0232     			| Speed limit (30km/h) 							|
