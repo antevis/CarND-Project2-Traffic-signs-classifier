@@ -1,8 +1,6 @@
-#**Traffic Sign Recognition** 
+# **Traffic Sign Recognition** 
 
-## Writeup Template
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
 
 ---
 
@@ -51,13 +49,13 @@ The goals / steps of this project are the following:
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
-###Writeup / README
+### Writeup / README
 
 Here is a link to my [project code](https://github.com/antevis/CarND-Project2-Traffic-signs-classifier/blob/master/Traffic_Sign_Classifier.ipynb)
 
-###Data Set Summary & Exploration
+### Data Set Summary & Exploration
 
-####1. Basic summary of the data set.
+#### 1. Basic summary of the data set.
 
 The code for this step is contained in the 3rd code cell of the IPython notebook.  
 
@@ -69,7 +67,7 @@ signs data set:
 * The shape of a traffic sign image is (32, 32, 3), that is, 32x32 pixels with depth of 3 channels.
 * The number of unique classes/labels in the data set is 43
 
-####2. Exploratory visualization of the dataset.
+#### 2. Exploratory visualization of the dataset.
 
 The code for this step is contained in the 5th code cell of the IPython notebook.  
 
@@ -77,9 +75,9 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 ![alt text][image1]
 
-###Model Architecture design and testing
+### Model Architecture design and testing
 
-####1. Pre-processing
+#### 1. Pre-processing
 
 Numerous techniques of image pre-processing had been tested, including histogram equalization on RGB, HSV, HLS (all combinations of 1, 2 and 3 channels), CLACHE, chahe-bw etc. Cell 6 displays some of tested image transformations. Deliberately omitted grayscacling as color information may be relevant for better classification, as will be shown later. One of transformations (aux.normalize) is my own implementation that I created before discovering the vast variety of available possibilities with OpenCV. Turn out it is almost identical to `cv2.equalizeHist` histogram equalization, though at some extreme cases of maximum contrast the latter performs better.
 Numerous training tests proved histogram equalization through all three channels works best.
@@ -91,7 +89,7 @@ Some pre-processed results:
 ![alt text][processed_imgs]
 
 
-####2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
+#### 2. Data preparation
 
 The [provided data](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5898cd6f_traffic-signs-data/traffic-signs-data.zip) have already been splitted to training, validation and test sets with the ratios of 67/9/24%, which seems ok and probably no any redistribution required.
 
@@ -107,7 +105,7 @@ Here are some examples of augmented and pre-processed images:
 
 ![alt text][augmented_imgs]
 
-####3. Final model architecture.
+#### 3. Final model architecture.
 
 The code for my final model is located in the 11th cell of the ipython notebook. In fact, there is a dedicated module `models.py`, containing all models been tested. There are a lot of them, including fancy implementations with merging several convolutional layers into one flattened. It turns out going deeper than 3 layers of convolution makes no sense with such a tiny dimentions of the input images.
 The final picked archtecture is:
@@ -136,10 +134,8 @@ My final model consisted of the following layers:
 | Fully connected           | 1024        									|
 | Output, Fully connected	| 43        									|
 
- 
 
-
-####4. Training
+#### 4. Training
 
 The code for setting up models hyperparamters, placeholders and operations is located in cell 12.
 
@@ -153,7 +149,7 @@ The epochs count is actually a terminal parameter of last resort just to stop tr
 
 To train the model, I used a pipeline located in cell 14.
 
-####5. Finding solution
+#### 5. Finding solution
 
 Numerous architectures of variable depth and breadth have been tested, including fancy implementations with merging separate convolutional layers into one flattened.
 As mentioned before, turns out going deeper than 3 layers of convolution makes no sense with such a tiny dimentions of the input images.
@@ -178,9 +174,9 @@ I set learning rate to a conventional 0.001 and picked Adam optimizer to do the 
 I set batch size to small value of 64 to trade accuracy against speed. As I understand, small batch size means more batches being generated per epoch wich means more weight ajustments to be done. 
 
 
-###Test a Model on New Images
+### Test a Model on New Images
 
-####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+#### 1. Obtaining new traffic signs.
 
 Here are 17 real-life Lithuanian traffic signs installed in the city of Vilnius:
 
@@ -193,7 +189,7 @@ Here are 17 real-life Lithuanian traffic signs installed in the city of Vilnius:
 
 The 4th image might be difficult to classify due to the fact that digit '6' in German signs looks quite different. 
 
-####2. Model's predictions on these new traffic signs.
+#### 2. Model's predictions on these new traffic signs.
 
 The code for making predictions on my final model is located in the 27th cell of the Ipython notebook.
 
@@ -209,7 +205,7 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. In fact, there are actually 17 samples in new signs set, and overall test accuracy on new images is 94.1%, that is, 16/17 and it appears that 'Speed limit 60' is the only misclassified sign.
 
-####3. Describing the model certainty
+#### 3. Describing the model certainty
 
 The code for making predictions on my final model is located in the 31st cell of the Ipython notebook.
 
