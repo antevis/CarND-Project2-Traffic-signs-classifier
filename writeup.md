@@ -216,6 +216,7 @@ The code for making predictions on my final model is located in the 31st cell of
 Top 5 Softmax probabilities for above signs
 
 Vehicles over 3,5 metric tons prohibited
+
 | Probability         	 |     Prediction	        					                  | 
 |:---------------------:|:---------------------------------------------:| 
 | .0612         		| Vehicles over 3,5 metric tons prohibited   	| 
@@ -224,7 +225,9 @@ Vehicles over 3,5 metric tons prohibited
 | .0229	      			| Priority road			 			        	|
 | .0228				    | End of speed limit (80km/h)      				|
 
+
 Speed limit (20km/h)
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | .0610         		| Speed limit (20km/h)                      	| 
@@ -233,7 +236,9 @@ Speed limit (20km/h)
 | .0229	      			| Vehicles over 3,5 metric tons prohibited		|
 | .0229				    | Speed limit (80km/h)          				|
 
+
 Priority road
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | .0606         		| Priority road			 			        	| 
@@ -242,7 +247,9 @@ Priority road
 | .0229	      			| Speed limit (80km/h)			 			   	|
 | .0229				    | Speed limit (100km/h)         				|
 
+
 Children crossing
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | .0599         		| Children crossing			 			       	| 
@@ -251,7 +258,9 @@ Children crossing
 | .0230	      			| Road narrows on the right			 		   	|
 | .0229				    | No vehicles                   				|
 
+
 Speed limit (60km/h)
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | .0458         		| Speed limit (80km/h)			 			   	| 
