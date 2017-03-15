@@ -182,16 +182,16 @@ I set batch size to small value of 64 to trade accuracy against speed. As I unde
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five real-life Lithuanian traffic signs installed in the city of Vilnius:
+Here are 17 real-life Lithuanian traffic signs installed in the city of Vilnius:
 
-![alt text][img1] ![alt text][img2] ![alt text][img3] 
+![alt text][img0] ![alt text][img1] ![alt text][img2] ![alt text][img3] 
 ![alt text][img4] ![alt text][img5] ![alt text][img6] 
 ![alt text][img7] ![alt text][img8] ![alt text][img9] 
 ![alt text][img10] ![alt text][img11] ![alt text][img12] 
 ![alt text][img13] ![alt text][img14] ![alt text][img15]
 ![alt text][img16] 
 
-The first image might be difficult to classify due to the fact that digit '6' in German signs looks quite different. 
+The 4th image might be difficult to classify due to the fact that digit '6' in German signs looks quite different. 
 
 ####2. Model's predictions on these new traffic signs.
 
