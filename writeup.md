@@ -50,7 +50,7 @@ The goals / steps of this project are the following:
 ---
 ###Writeup / README
 
-Here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+Here is a link to my [project code](https://github.com/antevis/CarND-Project2-Traffic-signs-classifier/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ###Data Set Summary & Exploration
 
