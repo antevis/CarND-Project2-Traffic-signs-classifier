@@ -46,7 +46,7 @@ The goals / steps of this project are the following:
 
 
 ## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
+### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
 ### Writeup / README
@@ -83,9 +83,11 @@ Numerous techniques of image pre-processing had been tested, including histogram
 Numerous training tests proved histogram equalization through all three channels works best.
 
 Original image:
+
 ![alt text][original_img]
 
 Some pre-processed results:
+
 ![alt text][processed_imgs]
 
 
